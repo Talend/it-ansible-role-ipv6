@@ -9,15 +9,27 @@ platforms:
   - name: centos7
     image: 'geerlingguy/docker-centos7-ansible:latest'
     pre_build_image: true
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    privileged: true
   - name: centos6
     image: 'geerlingguy/docker-centos6-ansible:latest'
     pre_build_image: true
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    privileged: true
   - name: debian9
     image: 'geerlingguy/docker-debian9-ansible:latest'
     pre_build_image: true
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    privileged: true
   - name: debian8
     image: 'geerlingguy/docker-debian8-ansible:latest'
     pre_build_image: true
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    privileged: true
   - name: ubuntu1804
     image: 'geerlingguy/docker-ubuntu1804-ansible:latest'
     pre_build_image: true

@@ -1,12 +1,13 @@
+---
 language: python
 python:
-- 2.7
+  - 2.7
 services:
-- docker
+  - docker
 install:
-- pip install molecule docker
+  - pip install molecule docker
 script:
-- molecule test
+  - molecule test
 notifications:
   email: false
   slack:

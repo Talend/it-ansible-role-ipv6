@@ -1,0 +1,14 @@
+language: python
+python:
+- 2.7
+services:
+- docker
+install:
+- pip install molecule docker
+script:
+- molecule test
+notifications:
+  email: false
+  slack:
+    on_success: always
+    secure: zHVcRkgeEKsEr8ETrZePsu4soR4/BcIJ/zU5ByejiZp8rCseIMzmSCoJGvzmlfPW8kJPZu5YquGUNX2Cld1YGZIi0GDDjcQWTrYr+eMiJJgznfzstY+bvx2PgCyetZGXsqVaktixHo4PctSE2btEdhJvcXnsMozSMvIYJTfRqPOSyP0eeW/zmg++d8pT6PCDL2O9CE9nh9JVxPTSFNdzVl2N412t1ewaKbFO1waOPPBVnix1aa9AtVWas5zOMvC9j3eQ+jWqFQmBI//mvBwS4jI6GYS0S6wjlP5F3BKPiSPxkUWpZF/mEHuHvr5oFepHZL2HKo4mqwOKwYqz//4WyiNNNIF4uuUJaGWqGut/hRP0ynQanHEZs+1J5zXyuYZQQr0OUtVjtGias3urNOtJMB7CTF1/I0ULHFLSdT5qiiJmUjurv2/Fi2iXWYKM+wPf/555RRfyb6iBCzFk2XVrj7w6EoL630ONRW0e/8VIQxOfInNVt0WkC7zO7Kov7li5SgwUwmn2v/L2rAtV2IleGjYzYvoMjs/ClGJOZKbfoKZU1Ne3CcBljf+RL6GZrxT3vTYWoLxwH1skCiZPesEoOHsJQSGsh+HKp5t+VGNCoAU2cDoWzntnaq19F2E2ve0DBzXw1ONwp8S6mHbqyJsubRxMwxRAlZ+qtQf8jobWNyA=

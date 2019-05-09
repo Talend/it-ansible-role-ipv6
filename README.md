@@ -1,6 +1,8 @@
 Ansible Role IPv6
 =========
 
+[![Build Status](https://travis-ci.org/Talend/it-ansible-role-ipv6.svg?branch=master)](https://travis-ci.org/Talend/it-ansible-role-ipv6)
+
 This role disable IPv6.
 
 Role Variables

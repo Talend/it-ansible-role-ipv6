@@ -6,3 +6,4 @@
     state: 'present'
     reload: 'yes'
   loop: '{{ sysctl_ipv6 }}'
+  become: true
